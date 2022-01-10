@@ -1,0 +1,25 @@
+{% extends "layout.html.twig" %}
+
+{% set pageTitle = "Home" %}
+
+{% block body %}
+
+
+    <h1 class="cover-heading">
+      <img src="{{ asset('build/images/home-big-colored.png') }}">
+      <div class="caption d-none">Site title</div>
+    </h1>
+
+    <h2 class="lead">
+      Commencer un nouveau site
+    </h2>
+
+    <p class="p-with-letrine">
+      <img src="{{ asset('build/images/question-mark.png') }}" class="letrine letrine-light" width="48" height="48">
+      <span class="caption">
+        C'est quoi ce truc ?
+        Vous avez besoin de plus d'<a href="{{ path('presentation') }}"><u>informations</u></a>.
+      </span>
+    </p>
+
+{% endblock %}

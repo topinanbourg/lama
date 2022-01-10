@@ -1,0 +1,17 @@
+{% set currentRoute = app.request.get('_route') %}
+{% set currentRouteParams = app.request.get('_route_params') %}
+
+<footer class="footer fixed-bottom  d-print-none">
+  <div class="container">
+    <nav class="nav nav-masthead justify-content-center">
+      <a class="nav-link{% if currentRoute == 'home' %} active{% endif %}" href="{{ path('home') }}">
+        <img src="{% if currentRoute == 'home' %}{{ asset('build/images/home-colored.png') }}{% else %}{{ asset('build/images/home-grey.png') }}{% endif %}" width="48" height="48">
+      </a>
+      <a class="nav-link{% if currentRoute == 'presentation' %} active{% endif %}" href="{{ path('presentation') }}">
+        <img
+          src="{% if currentRoute == 'presentation' %}{{ asset('build/images/list-colored.png') }}{% else %}{{ asset('build/images/list-grey.png') }}{% endif %}"
+          width="48" height="48">
+      </a>
+    </nav>
+  </div>
+</footer>

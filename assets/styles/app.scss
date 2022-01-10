@@ -1,0 +1,39 @@
+
+html,
+body {
+  height: 100%;
+}
+body {
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  line-height: 1.5;
+  font-family:'Montserrat Medium';
+  font-size: 14px;
+} 
+body > * {
+  max-width: 30em;
+  margin: auto;
+}
+
+/* center title */
+.cover-heading,
+.lead {
+    text-align: center;
+}
+
+/* paragraphe avec letrine letrine */
+.p-with-letrine  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.letrine {
+  float: left !important;
+  padding: .5em;
+  margin-right: .5em;
+  border-radius: 1em;
+  background-color: $orange;
+}
+.letrine-light {
+  background-color: $white;
+}
