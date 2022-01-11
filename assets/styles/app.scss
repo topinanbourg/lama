@@ -10,8 +10,12 @@ body {
   font-size: 14px;
 } 
 body > * {
-  max-width: 30em;
+  /*max-width: 30em;*/
   margin: auto;
+}
+
+footer {
+  display: none;
 }
 
 /* center title */
@@ -36,4 +40,52 @@ body > * {
 }
 .letrine-light {
   background-color: $white;
+}
+
+/* skinnag de "lama" */
+main.cover {
+  /* pour prendre toute la largeur possible */
+  height: 100vh;
+  /* pour que ce soit centré verticalement */
+  display: flex;
+  align-items: center;
+}
+
+.lama-container {
+  /* pour centrer horizontalemenr */
+  margin: auto;
+  /*  pour prendre toute la largeur .. */
+  width: 100%;
+  /* mais pas trop */
+  max-width: 80vh;
+  /* en conservant le ratio de l'image de BG */
+  aspect-ratio: 2000 / 2400;
+  /* just in "case of" */
+  background-color: $white;
+  margin-bottom: 1em;
+  /* pas de débordement */
+  overflow: hidden;
+  background-size: contain;
+}
+.lama-bg {
+  /* on prend toute la taille possible */
+  width: 100%;
+  height: 100%;
+}
+#lama div {
+  /* l'image de fond doit s'addapter à la taille */
+  background-size: contain;
+}
+/* les differantes parties skinnables */
+.lama-container .part {
+  cursor: pointer;
+  position: relative;
+  background-color: #ff000033;
+}
+/* les positions spécifiques en fonction des parties */
+.lama-part-corne {
+  top: -100%;
+  left: 11%;
+  width: 30%;
+  height: 14%;
 }

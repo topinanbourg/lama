@@ -3,23 +3,36 @@
 {% set pageTitle = "Home" %}
 
 {% block body %}
+<div class="container">
+  <div id="lama" class="lama-container">
+    <div class="lama-bg" data-bg="{{ asset('build/images/lama/placeholders.jpg') }}"></div>
+    <!-- <div class="lama-bg" data-bg="{{ asset('build/images/lama/background.jpg') }}"></div> -->
+    <!-- <div class="lama-corne" data-bg="{{ asset('build/images/lama/corne-4.png') }}"></div> -->
+    <div class="part" data-lama-part="corne"></div>
 
+  </div>
 
-    <h1 class="cover-heading">
-      <img src="{{ asset('build/images/home-big-colored.png') }}">
-      <div class="caption d-none">Site title</div>
-    </h1>
+  <p class="p-with-letrine d-none">
+    <img src="{{ asset('build/images/question-mark.png') }}" class="letrine letrine-light" width="48" height="48">
+    <span class="caption">
+      C'est quoi ce truc ?
+      Vous avez besoin de plus d'<a href="{{ path('presentation') }}"><u>informations</u></a>.
+    </span>
+  </p>
+</div>
 
-    <h2 class="lead">
-      Commencer un nouveau site
-    </h2>
+<script>
+  var lamaParts = {
+    corne: {
+      elements: [
+        "{{ asset('build/images/lama/corne-1.png') }}",
+        "{{ asset('build/images/lama/corne-2.png') }}",
+        "{{ asset('build/images/lama/corne-3.png') }}",
+        "{{ asset('build/images/lama/corne-4.png') }}"
+      ]
+    }
+  }
+</script>
 
-    <p class="p-with-letrine">
-      <img src="{{ asset('build/images/question-mark.png') }}" class="letrine letrine-light" width="48" height="48">
-      <span class="caption">
-        C'est quoi ce truc ?
-        Vous avez besoin de plus d'<a href="{{ path('presentation') }}"><u>informations</u></a>.
-      </span>
-    </p>
 
 {% endblock %}
