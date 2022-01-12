@@ -39,9 +39,6 @@
         </main>
     </div>
     {% block footer %}
-        {% if hiddeFooter is not defined or hiddeFooter is empty %}
-        {{ include("pieces/footer.html.twig") }}
-        {% endif %}
         {% endblock %}
         {% block javascripts %}
         {{ encore_entry_script_tags(assetsKeyToLoad) }}

@@ -26,11 +26,11 @@ class HomeController extends AbstractController
     
     /**
      * @Route(
-     *     "/presentation",
-     *     name="presentation"
+     *     "/prez",
+     *     name="prez"
      * )
      */
-    public function presentation(): Response
+    public function prez(): Response
     {
         $number = random_int(0, 100);
 

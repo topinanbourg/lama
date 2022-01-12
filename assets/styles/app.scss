@@ -14,10 +14,6 @@ body > * {
   margin: auto;
 }
 
-footer {
-  display: none;
-}
-
 /* center title */
 .cover-heading,
 .lead {
@@ -42,6 +38,10 @@ footer {
   background-color: $white;
 }
 
+/* skinnag de "lama" */
+.prez {
+  max-width: 26em;
+}
 /* skinnag de "lama" */
 main.cover {
   /* pour prendre toute la largeur possible */
