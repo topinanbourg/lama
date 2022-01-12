@@ -6,7 +6,7 @@ body {
 body {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   line-height: 1.5;
-  font-family:'Montserrat Medium';
+  /*font-family:'Montserrat Medium';*/
   font-size: 14px;
 } 
 body > * {
@@ -38,7 +38,14 @@ body > * {
   background-color: $white;
 }
 
-/* skinnag de "lama" */
+/* skin de footer */
+.footer a {
+  background-color: $dark;
+  padding: 0 1em;
+  color: $gray-400;
+
+}
+/* un peu de place pour ecrire du texte */
 .prez {
   max-width: 26em;
 }
