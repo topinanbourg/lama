@@ -40,7 +40,7 @@ $("div.part", $mainContainer).each( function (event) {
     if (typeof lamaParts == "undefined" || typeof lamaParts[partName] == "undefined") {
         return;
     }
-    var currentSkinPart = lamaParts[partName]["currentIndex"] = 1;
+    var currentSkinPart = lamaParts[partName]["currentIndex"] = 0;
     // le nombre d'image possible (index: donc nbr-1)
     lamaParts[partName]["maxIndex"] = lamaParts[partName]["elements"].length - 1;
 

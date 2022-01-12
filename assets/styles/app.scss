@@ -66,6 +66,9 @@ main.cover {
   /* pas de débordement */
   overflow: hidden;
   background-size: contain;
+
+  /* jolis bordures */
+  border-radius: 1em;
 }
 .lama-bg {
   /* on prend toute la taille possible */
@@ -80,12 +83,59 @@ main.cover {
 .lama-container .part {
   cursor: pointer;
   position: relative;
-  background-color: #ff000033;
 }
 /* les positions spécifiques en fonction des parties */
-.lama-part-corne {
+.lama-part-corn {
   top: -100%;
   left: 11%;
   width: 30%;
   height: 14%;
 }
+.lama-part-face {
+  top: -99.6%;
+  left: 4%;
+  width: 34%;
+  height: 22%;
+}
+.lama-part-stool {
+  top: -89.4%;
+  left: 38%;
+  width: 35%;
+  height: 19%;
+}
+.lama-part-mane {
+  top: -141.4%;
+  left: 36%;
+  width: 17%;
+  height: 35%;
+}
+
+.lama-part-tail {
+  top: -151%;
+  left: 66%;
+  width: 20%;
+  height: 12%;
+}
+
+
+/* just to debug */
+/*
+.lama-container .part {
+  background-color: #0000ff33;
+}
+.lama-container .lama-part-corn {
+  background-color: #ff000033;
+}
+.lama-container .lama-part-face {
+  background-color: #ff00ff33;
+}
+.lama-container .lama-part-stool {
+  background-color: #ff000033;
+}
+.lama-container .lama-part-mane {
+  background-color: #0000ff33;
+}
+.lama-container .lama-part-tail {
+  background-color: #ff00ff33;
+}
+/* end debug */
