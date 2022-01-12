@@ -13,16 +13,27 @@ class HomeController extends AbstractController
      *     name="home"
      * )
      */
-    public function home(): Response
+    public function home(string $currentHash = null): Response
     {
-        $number = random_int(0, 100);
-
         return $this->render(
             'home.html.twig',
             [
+                'currentHash' => $currentHash
             ]
         );
     }
+    /**
+     * @Route(
+     *     "/lama-{currentHash}",
+     *     name="displayLama",
+     *     requirements={"currentHash"="[0A-Z]+"}
+     * )
+     */
+    public function displayLama(string $currentHash): Response
+    {
+        return $this->home($currentHash);
+    }
+    
     
     /**
      * @Route(
