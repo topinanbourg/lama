@@ -1,25 +1,30 @@
-{% extends "layout.html.twig" %}
-
-{% set pageTitle = "Home" %}
-
-{% block body %}
+{% extends "layout.html.twig" %} {% set pageTitle = "Home" %} {% block body %}
 <div class="container">
   <div id="lama" class="lama-container">
-    <div class="lama-bg" data-bg="{{ asset('build/images/lama/background.jpg') }}"></div>
+    <div
+      class="lama-bg"
+      data-bg="{{ asset('build/images/lama/background.jpg') }}"
+    ></div>
     <!-- <div class="lama-bg" data-bg="{{ asset('build/images/lama/placeholders.jpg') }}"></div> -->
     <div class="part" data-lama-part="corn"></div>
     <div class="part" data-lama-part="face"></div>
     <div class="part" data-lama-part="stool"></div>
     <div class="part" data-lama-part="mane"></div>
     <div class="part" data-lama-part="tail"></div>
-
   </div>
 
   <p class="p-with-letrine d-none">
-    <img src="{{ asset('build/images/question-mark.png') }}" class="letrine letrine-light" width="48" height="48">
+    <img
+      src="{{ asset('build/images/question-mark.png') }}"
+      class="letrine letrine-light"
+      width="48"
+      height="48"
+    />
     <span class="caption">
-      C'est quoi ce truc ?
-      Vous avez besoin de plus d'<a href="{{ path('prez') }}"><u>informations</u></a>.
+      C'est quoi ce truc ? Vous avez besoin de plus d'<a
+        href="{{ path('prez') }}"
+        ><u>informations</u></a
+      >.
     </span>
   </p>
 </div>
@@ -31,38 +36,37 @@
         "{{ asset('build/images/lama/corne-1.png') }}",
         "{{ asset('build/images/lama/corne-2.png') }}",
         "{{ asset('build/images/lama/corne-3.png') }}",
-        "{{ asset('build/images/lama/corne-4.png') }}"
-      ]
+        "{{ asset('build/images/lama/corne-4.png') }}",
+      ],
     },
     face: {
       elements: [
         "{{ asset('build/images/lama/face-1.png') }}",
         "{{ asset('build/images/lama/face-2.png') }}",
-        "{{ asset('build/images/lama/face-3.png') }}"
-      ]
+        "{{ asset('build/images/lama/face-3.png') }}",
+      ],
     },
     stool: {
       elements: [
         "{{ asset('build/images/lama/stool-1.png') }}",
         "{{ asset('build/images/lama/stool-2.png') }}",
-        "{{ asset('build/images/lama/stool-3.png') }}"
-      ]
+        "{{ asset('build/images/lama/stool-3.png') }}",
+      ],
     },
     mane: {
       elements: [
         "{{ asset('build/images/lama/mane-1.png') }}",
-        "{{ asset('build/images/lama/mane-2.png') }}"
-      ]
+        "{{ asset('build/images/lama/mane-2.png') }}",
+      ],
     },
     tail: {
       elements: [
         "{{ asset('build/images/lama/tail-1.png') }}",
         "{{ asset('build/images/lama/tail-2.png') }}",
-        "{{ asset('build/images/lama/tail-3.png') }}"
-      ]
+        "{{ asset('build/images/lama/tail-3.png') }}",
+      ],
     },
-  }
+  };
 </script>
-
 
 {% endblock %}

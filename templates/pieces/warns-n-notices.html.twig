@@ -1,17 +1,13 @@
 <div class="alert-container">
-    {% if flashNotices is defined and flashNotices is not empty %}
-        {% for flashNotice in flashNotices %}
-        <div class="alert alert-success" role="alert">
-            {{ flashNotice }}
-        </div>
-        {% endfor %}
-    {% endif %}
-
-    {% if flashWarns is defined and flashWarns is not empty %}
-        {% for flashWarn in flashWarns %}
-        <div class="alert alert-danger" role="alert">
-            {{ flashWarn }}
-        </div>
-        {% endfor %}
-    {% endif %}
+  {% if flashNotices is defined and flashNotices is not empty %} {% for
+  flashNotice in flashNotices %}
+  <div class="alert alert-success" role="alert">
+    {{ flashNotice }}
+  </div>
+  {% endfor %} {% endif %} {% if flashWarns is defined and flashWarns is not
+  empty %} {% for flashWarn in flashWarns %}
+  <div class="alert alert-danger" role="alert">
+    {{ flashWarn }}
+  </div>
+  {% endfor %} {% endif %}
 </div>

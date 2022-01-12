@@ -1,47 +1,54 @@
-{% extends "layout.html.twig" %}
-
-{% set pageTitle = "Presentation" %}
-
-{% block body %}
+{% extends "layout.html.twig" %} {% set pageTitle = "Presentation" %} {% block
+body %}
 
 <div class="container prez">
+  <h1 class="cover-heading">
+    <img
+      class="rounded"
+      src="{{ asset('build/images/lama/placeholders.jpg') }}"
+      width="100"
+    />
+    <div class="caption d-none">Build your lama</div>
+  </h1>
 
-    <h1 class="cover-heading">
-        <img class="rounded" src="{{ asset('build/images/lama/placeholders.jpg') }}" width="100">
-        <div class="caption d-none">Build your lama</div>
-    </h1>
-    
-    <h2 class="lead">
-        Build your lama.
-    </h2>
-    <p class="p-with-letrine">
-        <img src="{{ asset('build/images/lama/favicon.png') }}" class="letrine letrine-light" width="48" height="48">
-        <span class="caption">
-            Quoi de plus doux qu'un lama ?
-        </span>
-    </p>
-    <p class="p-with-letrine">
-        <img src="{{ asset('build/images/pencils.png') }}" class="letrine letrine-light" width="48" height="48">
-        <span class="caption">
-            Dessins de Théa ...
-        </span>
-    </p>
-    <p class="p-with-letrine">
-        <img src="{{ asset('build/images/code.png') }}" class="letrine letrine-light" width="48" height="48">
-        <span class="caption">
-            Code par son papa ...
-        </span>
-    </p>
-    <p class="p-with-letrine">
-        <img src="{{ asset('build/images/people.png') }}" class="letrine letrine-light" width="48" height="48">
-        <span class="caption">
-            LAMA pour tous !
-        </span>
-    </p>
-    <a href="{{ path('home') }}" class="btn btn-light btn-block">
-        Retour
-    </a>
+  <h2 class="lead">Build your lama.</h2>
+  <p class="p-with-letrine">
+    <img
+      src="{{ asset('build/images/lama/favicon.png') }}"
+      class="letrine letrine-light"
+      width="48"
+      height="48"
+    />
+    <span class="caption"> Quoi de plus doux qu'un lama ? </span>
+  </p>
+  <p class="p-with-letrine">
+    <img
+      src="{{ asset('build/images/pencils.png') }}"
+      class="letrine letrine-light"
+      width="48"
+      height="48"
+    />
+    <span class="caption"> Dessins de Théa ... </span>
+  </p>
+  <p class="p-with-letrine">
+    <img
+      src="{{ asset('build/images/code.png') }}"
+      class="letrine letrine-light"
+      width="48"
+      height="48"
+    />
+    <span class="caption"> Code par son papa ... </span>
+  </p>
+  <p class="p-with-letrine">
+    <img
+      src="{{ asset('build/images/people.png') }}"
+      class="letrine letrine-light"
+      width="48"
+      height="48"
+    />
+    <span class="caption"> LAMA pour tous ! </span>
+  </p>
+  <a href="{{ path('home') }}" class="btn btn-light btn-block"> Retour </a>
 </div>
-    
-    
-    {% endblock %}
+
+{% endblock %}
