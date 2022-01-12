@@ -6,13 +6,7 @@ var $mainContainer = $("#lama");
 var $bgLama = $("div.lama-bg:first", $mainContainer);
 $bgLama.css("background-image", 'url("' + $bgLama.data("bg") + '")');
 
-/* l'action lors du click sur une partie de lama skinnable */
-
-var onSkinPartClick = function (target, event) {
-  var $this = $(this);
-  var partName = $this.data("lama-part");
-};
-
+/* l'affectation du bg au block */
 var skinPartSetBg = function ($element, partName, currentSkinPart) {
   if (
     currentSkinPart == 0 ||
@@ -29,6 +23,8 @@ var skinPartSetBg = function ($element, partName, currentSkinPart) {
   );
   return currentSkinPart;
 };
+
+/* l'action lors du click sur une partie de lama skinnable */
 var onSkinPartClick = function () {
   var $this = $(this);
   var partName = $this.data("lama-part");
@@ -65,13 +61,3 @@ $("div.part", $mainContainer).each(function (event) {
 
   $this.on("click", onSkinPartClick);
 });
-
-/*
-$(">div", $mainContainer).each( function (event) {
-    var $this = $(this);
-    var imgSrc = $this.data('bg');
-    if (imgSrc.indexOf('.')) {
-        $this.css("background-image", 'url("'+ imgSrc +'")');
-    }
-});
-*/
