@@ -1,14 +1,13 @@
-
 html,
 body {
   height: 100%;
 }
 body {
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   line-height: 1.5;
   /*font-family:'Montserrat Medium';*/
   font-size: 14px;
-} 
+}
 body > * {
   /*max-width: 30em;*/
   margin: auto;
@@ -17,20 +16,20 @@ body > * {
 /* center title */
 .cover-heading,
 .lead {
-    text-align: center;
+  text-align: center;
 }
 
 /* paragraphe avec letrine letrine */
-.p-with-letrine  {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.p-with-letrine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .letrine {
   float: left !important;
-  padding: .5em;
-  margin-right: .5em;
+  padding: 0.5em;
+  margin-right: 0.5em;
   border-radius: 1em;
   background-color: $orange;
 }
@@ -43,7 +42,6 @@ body > * {
   background-color: $dark;
   padding: 0 1em;
   color: $gray-400;
-
 }
 /* un peu de place pour ecrire du texte */
 .prez {
@@ -123,7 +121,6 @@ main.cover {
   width: 20%;
   height: 12%;
 }
-
 
 /* just to debug */
 /*
