@@ -1,4 +1,8 @@
-Lama
+# Pimp your Lama
+
+![Pimp your lama favicon](/public/favicons/apple-touch-icon.png?raw=true "Pimp your lama")
+
+Tests de positionnement css `flex`
 
 ## Require
 
@@ -7,14 +11,18 @@ Lama
 
 ## install global package
 
+```
 npm install --global yarn
 npm install --global gulp-cli
+```
 
 ## install
 
+```sh
 $ composer install
 $ npm install
 $ yarn install
+```
 
 ## Apache VHost exemple
 
