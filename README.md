@@ -1,6 +1,6 @@
 # Pimp your Lama
 
-![Pimp your lama exemple](/public/exemple.png?raw=true "Pimp your lama")
+![Pimp your lama exemple](/public/repository-open-graph.png?raw=true "Pimp your lama")
 
 Tests de positionnement css `flex`
 
