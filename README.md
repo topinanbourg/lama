@@ -1,8 +1,10 @@
 # Pimp your Lama
 
-![Pimp your lama favicon](/public/favicons/apple-touch-icon.png?raw=true "Pimp your lama")
+![Pimp your lama favicon](/public/exemple.png?raw=true "Pimp your lama")
 
 Tests de positionnement css `flex`
+
+Pimp your own in https://lama.kalak.xyz
 
 ## Require
 
